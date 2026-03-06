@@ -249,12 +249,12 @@ class ViewProvider {
         getPlaceholder: model => {
           const placeholders = {
             text: '',
-            h1: 'Heading 1',
-            h2: 'Heading 2',
-            h3: 'Heading 3',
-            h4: 'Heading 4',
-            h5: 'Heading 5',
-            h6: 'Heading 6',
+            h1: '一级标题',
+            h2: '二级标题',
+            h3: '三级标题',
+            h4: '四级标题',
+            h5: '五级标题',
+            h6: '六级标题',
             quote: '',
           };
           return placeholders[model.props.type] ?? '';
@@ -264,13 +264,13 @@ class ViewProvider {
       this._manager.configure(ParagraphViewExtension, {
         getPlaceholder: model => {
           const placeholders = {
-            text: "Type '/' for commands, 'space' for AI",
-            h1: 'Heading 1',
-            h2: 'Heading 2',
-            h3: 'Heading 3',
-            h4: 'Heading 4',
-            h5: 'Heading 5',
-            h6: 'Heading 6',
+            text: `按 "/" 唤出命令，按"空格"唤出AI`,
+            h1: '一级标题',
+            h2: '二级标题',
+            h3: '三级标题',
+            h4: '四级标题',
+            h5: '五级标题',
+            h6: '六级标题',
             quote: '',
           };
           return placeholders[model.props.type] ?? '';
